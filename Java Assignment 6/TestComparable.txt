@@ -1,0 +1,34 @@
+package com.naveen;
+
+ import java.util.*;
+ import java.io.*;
+class TestComparator {
+    public static void main(String[] args) {
+
+        // Creating the TreeSet with Comparator object passed
+        // as the parameter which will sort the user defined
+        // objects of TreeSet
+        var treeSet = new TreeSet<Employee>();
+        var e1 = new Employee(1, "SriRam", "MCA", 40_000);
+        var e2 = new Employee(2, "Nani", "Mech", 35_000);
+        var e3 = new Employee(3, "Manikanta", "IT", 45_000);
+        var e4 = new Employee(4, "Mayank", "Chem", 75_000);
+        var e5 = new Employee(5, "Piyush", "Biotech", 10_000);
+
+        Employee.field="name";
+
+
+        treeSet.add(e1);
+        treeSet.add(e4);
+        treeSet.add(e2);
+        treeSet.add(e3);
+        treeSet.add(e5);
+        Employee e = null;
+            for (var h : treeSet) {
+                e = h;
+                System.out.println(e.getName());
+            }
+    }
+}
+
+
