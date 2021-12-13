@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 40%;
+                background-color: rgb(63, 218, 140);
+                }
+                h1{
+                    font-size: 35px;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <h2>Please fill all the Fields.</h2>
+        <form>
+            <label for="name">Enter Name:</label>
+            <input type="text" id="Username" placeholder="Enter your name...">
+        </form>
+        <br>
+        <form>
+            <label for="email">Enter mail :</label>
+            <input type="email" id="email" placeholder="Enter your mail...">
+        </form>
+        <br>
+        <div>
+            <label for="number">Select your age:</label>
+            <input type="number" id="number" min="1" max="100">
+        </div>
+        <br>
+        <label for="dropdown" >Select your Gender:</label>
+        <select name="dropdown" id="dropdown" >
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+    </select>
+    <br><br>
+    <div>
+        
+        <label for="qualification">Select your qualification:</label><br>
+        <input type="radio" >Intermediate<br>
+        <input type="radio" >UG<br>
+        <input type="radio" >PG<br>
+        
+    </div>
+    <br>
+    <div>
+        <label for="date-label">Date of Birth:</label>
+        <input type="date" name="bday">
+    </div>
+    <br>
+    <div>
+        <label for="skills">What skills do you have:</label><br>
+        <input type="checkbox">Java<br>
+        <input type="checkbox">Phyton<br>
+        <input type="checkbox">SQL<br>
+        <input type="checkbox">HTML<br>
+        <input type="checkbox">CSS<br>
+        <input type="checkbox">JS<br>
+        <input type="checkbox">C++
+    </div>
+    <div>
+        <label for="bio">Your bio:</label>
+        <textarea name="bio" cols="30" rows="1" placeholder="about you..."></textarea>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="submit the form">
+    </div>
+    
+        
+
+
+
+    </body>
+</html>
